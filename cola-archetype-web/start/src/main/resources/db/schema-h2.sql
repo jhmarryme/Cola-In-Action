@@ -1,0 +1,19 @@
+DROP TABLE IF EXISTS user_jpa;
+CREATE TABLE user_jpa
+(
+    id    BIGINT(20) NOT NULL COMMENT '主键ID',
+    name  VARCHAR(30) NULL DEFAULT NULL COMMENT '姓名',
+    email VARCHAR(50) NULL DEFAULT NULL COMMENT 'url',
+    PRIMARY KEY (id)
+);
+
+DROP TABLE IF EXISTS user_mybatis;
+CREATE TABLE user_mybatis
+(
+    id    BIGINT(20) NOT NULL COMMENT '主键ID',
+    name  VARCHAR(30) NULL DEFAULT NULL COMMENT '姓名',
+    age   INT(11) NULL DEFAULT NULL COMMENT '年龄',
+    email VARCHAR(50) NULL DEFAULT NULL COMMENT '邮箱',
+    PRIMARY KEY (id)
+);
+
