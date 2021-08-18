@@ -16,6 +16,7 @@
         <module>cola-component-dto</module>
         <module>cola-component-exception</module>
         <module>cola-component-catchlog-starter</module>
+        <module>cola-components-security</module>
     </modules>
 
     <properties>
