@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  * @author Frank Zhang
  */
-@SpringBootApplication(scanBasePackages = {"com.jhmarryme.cola.web","com.alibaba.cola", "com.jhmarryme.cola.config"})
+@SpringBootApplication(scanBasePackages = {"com.jhmarryme.cola.web","com.alibaba.cola", "com.jhmarryme.cola"})
 @MapperScan("com.jhmarryme.cola.web.gatewayimpl.database.mybatis")
 public class Application {
 
