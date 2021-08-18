@@ -2,7 +2,6 @@ package com.jhmarryme.cola.config.exception;
 
 import com.jhmarryme.cola.config.i18n.I18nMessageUtil;
 import com.jhmarryme.cola.dto.MultiResponse;
-import com.jhmarryme.cola.dto.Response;
 import com.jhmarryme.cola.exception.BizException;
 import com.jhmarryme.cola.exception.SysException;
 import lombok.extern.slf4j.Slf4j;

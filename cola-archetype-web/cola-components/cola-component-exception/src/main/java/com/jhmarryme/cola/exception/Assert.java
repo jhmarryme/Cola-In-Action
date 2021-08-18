@@ -30,7 +30,8 @@ public abstract class Assert {
      *
      * for example
      *
-     * <pre class="code">Assert.isTrue(i != 0, errorCode.B_ORDER_illegalNumber, "The order number can not be zero");</pre>
+     * <pre class="code">Assert.isTrue(i != 0, errorCode.B_ORDER_illegalNumber, "The order number can not be zero");
+     * </pre>
      *
      * @param expression a boolean expression
      * @param errorCode 错误码
@@ -49,7 +50,8 @@ public abstract class Assert {
      *
      * for example
      *
-     * <pre class="code">Assert.isFalse(i == 0, errorCode.B_ORDER_illegalNumber, "The order number can not be zero");</pre>
+     * <pre class="code">Assert.isFalse(i == 0, errorCode.B_ORDER_illegalNumber, "The order number can not be zero");
+     * </pre>
      *
      * This is more intuitive than isTure.
      */

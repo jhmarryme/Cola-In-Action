@@ -1,5 +1,5 @@
 package com.jhmarryme.cola.web.order;
 
-public class OrderGatewayImpl{
+public class OrderGatewayImpl {
 
 }

@@ -9,7 +9,7 @@ public enum CatchLogErrorEnum {
     /** 参数校验错误 */
     PARAM_VERIFICATION_ERROR("PARAM_VERIFICATION_ERROR", "参数校验错误"),
     /** 未知异常 */
-    UNKNOWN_ERROR("UNKNOWN_ERROR", "未知异常")
+    UNKNOWN_ERROR("UNKNOWN_ERROR", "未知异常"),
     ;
 
     CatchLogErrorEnum(String errorCode, String errorMsg) {
