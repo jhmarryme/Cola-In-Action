@@ -19,9 +19,9 @@ import java.io.IOException;
  * @author JiaHao Wang
  * @date 2020/11/30 18:47
  */
-@Component("imoocAuthenticationSuccessHandler")
+@Component("colaAuthenticationSuccessHandler")
 @Slf4j
-public class ImoocAuthenticationSuccessHandler extends SavedRequestAwareAuthenticationSuccessHandler {
+public class ColaAuthenticationSuccessHandler extends SavedRequestAwareAuthenticationSuccessHandler {
 
     @Autowired
     private ObjectMapper objectMapper;

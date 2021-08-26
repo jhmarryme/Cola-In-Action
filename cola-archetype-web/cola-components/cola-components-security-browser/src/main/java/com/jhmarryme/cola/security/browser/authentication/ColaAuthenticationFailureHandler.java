@@ -22,9 +22,9 @@ import java.io.IOException;
  * @author JiaHao Wang
  * @date 2020/11/30 19:04
  */
-@Component("imoocAuthenticationFailureHandler")
+@Component("colaAuthenticationFailureHandler")
 @Slf4j
-public class ImoocAuthenticationFailureHandler extends SimpleUrlAuthenticationFailureHandler {
+public class ColaAuthenticationFailureHandler extends SimpleUrlAuthenticationFailureHandler {
 
     @Autowired
     private ObjectMapper objectMapper;

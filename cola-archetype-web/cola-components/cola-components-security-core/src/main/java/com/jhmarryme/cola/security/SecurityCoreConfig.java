@@ -21,8 +21,8 @@ public class SecurityCoreConfig {
      * <br/>
      * @return org.springframework.security.crypto.password.PasswordEncoder
      */
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
+    // @Bean
+    // public PasswordEncoder passwordEncoder() {
+    //     return new BCryptPasswordEncoder();
+    // }
 }

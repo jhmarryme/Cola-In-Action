@@ -12,8 +12,8 @@ import java.io.IOException;
  * @author JiaHao Wang
  * @date 2021/1/29 11:44
  */
-public class ImoocInvalidSessionStrategy extends AbstractSessionStrategy implements InvalidSessionStrategy {
-    public ImoocInvalidSessionStrategy(String invalidSessionUrl) {
+public class ColaInvalidSessionStrategy extends AbstractSessionStrategy implements InvalidSessionStrategy {
+    public ColaInvalidSessionStrategy(String invalidSessionUrl) {
         super(invalidSessionUrl);
     }
 

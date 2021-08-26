@@ -11,8 +11,8 @@ import java.io.IOException;
  * @author JiaHao Wang
  * @date 2021/1/28 17:26
  */
-public class ImoocExpiredSessionStrategy extends AbstractSessionStrategy implements SessionInformationExpiredStrategy {
-    public ImoocExpiredSessionStrategy(String destinationUrl) {
+public class ColaExpiredSessionStrategy extends AbstractSessionStrategy implements SessionInformationExpiredStrategy {
+    public ColaExpiredSessionStrategy(String destinationUrl) {
         super(destinationUrl);
     }
 

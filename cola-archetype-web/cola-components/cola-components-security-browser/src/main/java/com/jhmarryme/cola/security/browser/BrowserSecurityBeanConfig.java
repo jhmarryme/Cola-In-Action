@@ -1,8 +1,8 @@
 package com.jhmarryme.cola.security.browser;
 
 import com.jhmarryme.cola.security.browser.logout.DefaultLogoutSuccessHandler;
-import com.jhmarryme.cola.security.browser.session.ImoocExpiredSessionStrategy;
-import com.jhmarryme.cola.security.browser.session.ImoocInvalidSessionStrategy;
+import com.jhmarryme.cola.security.browser.session.ColaExpiredSessionStrategy;
+import com.jhmarryme.cola.security.browser.session.ColaInvalidSessionStrategy;
 import com.jhmarryme.cola.security.properties.SecurityProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -20,20 +20,19 @@ import org.springframework.security.web.session.SessionInformationExpiredStrateg
 @Configuration
 public class BrowserSecurityBeanConfig {
 
-
     @Autowired
     private SecurityProperties securityProperties;
 
     @Bean
     @ConditionalOnMissingBean(InvalidSessionStrategy.class)
     public InvalidSessionStrategy invalidSessionStrategy() {
-        return new ImoocInvalidSessionStrategy(securityProperties.getBrowser().getSession().getSessionInvalidUrl());
+        return new ColaInvalidSessionStrategy(securityProperties.getBrowser().getSession().getSessionInvalidUrl());
     }
 
     @Bean
     @ConditionalOnMissingBean(SessionInformationExpiredStrategy.class)
     public SessionInformationExpiredStrategy sessionInformationExpiredStrategy() {
-        return new ImoocExpiredSessionStrategy(securityProperties.getBrowser().getSession().getSessionInvalidUrl());
+        return new ColaExpiredSessionStrategy(securityProperties.getBrowser().getSession().getSessionInvalidUrl());
     }
 
     @Bean
